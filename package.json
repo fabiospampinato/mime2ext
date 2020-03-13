@@ -1,0 +1,56 @@
+{
+  "name": "mime2ext",
+  "description": "Convert a mime type to a file extension. It works only with popular mime types and its super lightweight.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "clean:coverage": "rimraf coverage .nyc_output",
+    "clean": "npm run clean:dist && npm run clean:coverage",
+    "compile": "tsc --skipLibCheck && tstei",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "coverage": "nyc --reporter=html ava",
+    "report": "nyc report",
+    "report:html": "open coverage/index.html",
+    "prepublishOnly": "npm run clean && npm run compile && npm run coverage"
+  },
+  "ava": {
+    "files": [
+      "test/index.js"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/mime2ext/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/mime2ext.git"
+  },
+  "keywords": [
+    "mime",
+    "mime-type",
+    "detect",
+    "infer",
+    "convert",
+    "ext",
+    "extension"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.12.29",
+    "ava": "^2.4.0",
+    "ava-spec": "^1.1.1",
+    "nyc": "^15.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3",
+    "typescript-transform-export-interop": "^1.0.2"
+  }
+}
