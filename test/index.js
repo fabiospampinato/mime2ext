@@ -2,12 +2,23 @@
 /* IMPORT */
 
 import {describe} from 'ava-spec';
+import mime from 'mime';
 import {default as mime2ext} from '../dist';
 import {TESTS} from './fixtures';
 
 /* MIME 2 EXT */
 
 describe ( 'mime2ext', it => {
+
+  it ( 'returns the same extensions as mime', t => {
+
+    for ( const test in TESTS ) {
+
+      t.is ( mime2ext ( test ), mime.getExtension ( test ) );
+
+    }
+
+  });
 
   it ( 'supports popular mime types', t => {
 

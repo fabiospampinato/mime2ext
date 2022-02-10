@@ -29,7 +29,7 @@ const MIME_SHORT = {
   'dash+xml': 'mpd',
   'docbook+xml': 'dbk',
   'dssc+xml': 'xdssc',
-  'ecmascript': 'ecma',
+  'ecmascript': 'es',
   'font-tdpfr': 'pfr',
   'geo+json': 'geojson',
   'gzip': 'gz',
@@ -99,6 +99,7 @@ const MIME_SHORT = {
   'xcap-diff+xml': 'xdf',
   'xml-dtd': 'dtd',
   'xproc+xml': 'xpl',
+  'xslt+xml': 'xsl',
   'xv+xml': 'mxml',
   /* AUDIO */
   'adpcm': 'adp',
