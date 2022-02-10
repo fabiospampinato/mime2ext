@@ -2,7 +2,7 @@
 /* IMPORT */
 
 import {describe} from 'ava-spec';
-import mime from 'mime';
+import mm from 'mime';
 import {default as mime2ext} from '../dist';
 import {TESTS} from './fixtures';
 
@@ -12,9 +12,9 @@ describe ( 'mime2ext', it => {
 
   it ( 'returns the same extensions as mime', t => {
 
-    for ( const test in TESTS ) {
+    for ( const mime in TESTS ) {
 
-      t.is ( mime2ext ( test ), mime.getExtension ( test ) );
+      t.is ( mime2ext ( mime ), mm.getExtension ( mime ) );
 
     }
 
