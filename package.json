@@ -1,7 +1,7 @@
 {
   "name": "mime2ext",
   "description": "Convert a mime type to a file extension. It works only with popular mime types and it's super lightweight.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
