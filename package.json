@@ -2,7 +2,7 @@
   "name": "mime2ext",
   "repository": "github:fabiospampinato/mime2ext",
   "description": "Convert a mime type to a file extension. It works only with popular mime types and it's super lightweight.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
