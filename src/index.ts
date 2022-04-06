@@ -1,27 +1,19 @@
 
 /* IMPORT */
 
-import {MIME_FULL, MIME_SHORT} from './consts';
+import db from 'mime-standard';
 
-/* MIME 2 EXT */
+/* MAIN */
 
-const re = /^.*\/((.*?)(?:\+.+)?)$/;
-
-function mime2ext ( mime: string ): string {
+const mime2ext = ( mime: string ): string => {
 
   mime = mime.trim ().toLowerCase ();
 
-  const full = MIME_FULL[mime];
+  if ( !db.hasOwnProperty ( mime ) ) return '';
 
-  if ( full ) return full;
+  return db[mime][0];
 
-  const match = re.exec ( mime );
-
-  if ( !match ) return '';
-
-  return MIME_SHORT[match[1]] || match[2];
-
-}
+};
 
 /* EXPORT */
 

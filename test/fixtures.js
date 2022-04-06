@@ -1,5 +1,5 @@
 
-/* FIXTURES */
+/* MAIN */
 
 const TESTS = {
   'application/andrew-inset': 'ez',
@@ -253,4 +253,4 @@ const TESTS = {
 
 /* EXPORT */
 
-module.exports = {TESTS};
+export {TESTS};

@@ -1,12 +1,12 @@
 
 /* IMPORT */
 
-import {describe} from 'ava-spec';
+import {describe} from 'fava';
 import mm from 'mime';
-import {default as mime2ext} from '../dist';
-import {TESTS} from './fixtures';
+import mime2ext from '../dist/index.js';
+import {TESTS} from './fixtures.js';
 
-/* MIME 2 EXT */
+/* MAIN */
 
 describe ( 'mime2ext', it => {
 
