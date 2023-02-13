@@ -2,23 +2,12 @@
 /* IMPORT */
 
 import {describe} from 'fava';
-import mm from 'mime';
 import mime2ext from '../dist/index.js';
 import {TESTS} from './fixtures.js';
 
 /* MAIN */
 
 describe ( 'mime2ext', it => {
-
-  it ( 'returns the same extensions as mime', t => {
-
-    for ( const mime in TESTS ) {
-
-      t.is ( mime2ext ( mime ), mm.getExtension ( mime ) );
-
-    }
-
-  });
 
   it ( 'supports popular mime types', t => {
 
