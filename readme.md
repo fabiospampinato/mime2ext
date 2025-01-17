@@ -7,13 +7,15 @@ This library is designed to only support the ~300 popular mime types listed [her
 ## Install
 
 ```sh
-npm install --save mime2ext
+npm install mime2ext
 ```
 
 ## Usage
 
 ```ts
 import mime2ext from 'mime2ext';
+
+// Let's convert a mime type to a file extension
 
 mime2ext ( 'audio/mp3' ); // => 'mp3'
 ```
