@@ -2,6 +2,7 @@
   "name": "mime2ext",
   "repository": "github:fabiospampinato/mime2ext",
   "description": "Convert a mime type to a file extension. It works only with popular mime types and it's super lightweight.",
+  "license": "MIT",
   "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -25,11 +26,11 @@
     "extension"
   ],
   "dependencies": {
-    "mime-standard": "^1.0.2"
+    "mime-standard": "^1.0.3"
   },
   "devDependencies": {
-    "fava": "^0.2.1",
-    "tsex": "^3.0.1",
-    "typescript": "^5.1.6"
+    "fava": "^0.3.4",
+    "tsex": "^4.0.2",
+    "typescript": "^5.7.3"
   }
 }
